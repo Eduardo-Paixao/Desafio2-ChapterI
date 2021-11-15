@@ -17,5 +17,5 @@ export interface MovieProps {
 
 export interface GenreIdProps {
   selectedGenreId: number;
-  setSelectedGenreId: React.Dispatch<React.SetStateAction<number>>
+  setSelectedGenreId?: React.Dispatch<React.SetStateAction<number>>
 }

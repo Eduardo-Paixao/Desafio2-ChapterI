@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { api } from "../services/api";
 import { Button } from "./Button";
 import { Content } from "./Content";
-import { GenreIdProps, GenreResponseProps } from "./Interfaces";
+import { GenreResponseProps } from "./Interfaces";
 
 export function SideBar() {
   // Complete aqui
@@ -35,7 +35,7 @@ export function SideBar() {
         </div>
 
       </nav>
-      <Content selectedGenreId={selectedGenreId} setSelectedGenreId={setSelectedGenreId} />
+      <Content selectedGenreId={selectedGenreId} />
     </>
   )
 }
